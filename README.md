@@ -5,7 +5,7 @@ As instruções do RiscV possui uma quantidade fixa de 32 bits, podendo assumir 
 #### Tipo R:
 As instruções do tipo R são aquelas que realizam operações aritméticas e lógicas, isso inclui: ADD, SUB, SLT, AND, OR, etc. A configuração dos bits desse tipo de instrução segue o seguinte padrão:
 
-![imagem_2024-09-24_083855741](https://github.com/user-attachments/assets/056a3b33-f29c-4d86-8d32-d0d68bbd8417)
+![imagem_2024-09-24_083855741](https://github.com/user-attachments/assets/056a3b33-f29c-4d86-8d32-d0d68bbd8417) 182
 
 * opcode (6-0) - O opcode é o código que define que a instrução será do tipo R, logo todas as instruções do tipo R possui o mesmo opcode.
 * rd (11-7) - rd é o registrador de destino do resultado da operação.
