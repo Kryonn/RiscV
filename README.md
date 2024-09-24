@@ -28,6 +28,22 @@ funct7  /    rs1    /    rs2    /  funct3   /     rd    /    opcode
 #### Tipo I:
 As instruções do tipo I são aquelas que realizam operações com valores imediatos, ou seja, que não estejam em registradores. Nisso, estão incluídos: operações aritméticas com valores imediatos e operações de escrita (load). A configuração dos bits desse tipo de istrução segue o seguinte padrão:
 
+![imagem_2024-09-24_093110451](https://github.com/user-attachments/assets/8650b94f-c824-4677-98c3-1bc045e47946)
+
+* opcode (6-0) - Código de identificação das instruções do tipo I.
+* rd (11-7) - rd é o registrador de destino do resultado da operação.
+* funct3 (14-12) - funct3 é o código que define a operação que será feita(soma, subtração, or, ...).
+* rs1 (19-15) - rs1 é o código do registrador que contém o valor do primeiro operando.
+* imm[11:0] (31-20) - imm é o valor do imediato.
+
+##### Exemplos:
+
+ imm[11:0]   /    rs2    /  funct3   /     rd    /    opcode
+
+
+
+
+
 
 
 
