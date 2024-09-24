@@ -7,7 +7,7 @@ As instruções do tipo R são aquelas que realizam operações aritméticas e l
 
 ![imagem_2024-09-24_083855741](https://github.com/user-attachments/assets/056a3b33-f29c-4d86-8d32-d0d68bbd8417) 182
 
-* opcode (6-0) - O opcode é o código que define que a instrução será do tipo R, logo todas as instruções do tipo R possui o mesmo opcode.
+* opcode (6-0) - O opcode é o código que define que a instrução será do tipo R, logo todas as instruções do tipo R possuem o mesmo opcode.
 * rd (11-7) - rd é o registrador de destino do resultado da operação.
 * funct3 (14-12) - funct3 é o código que define a operação que será feita(soma, subtração, or, ...).
 * rs1 (19-15) - rs1 é o código do registrador que contém o valor do primeiro operando.
@@ -24,6 +24,11 @@ funct7  /    rs1    /    rs2    /  funct3   /     rd    /    opcode
 0000000 / 00001 / 00000 /  110  / 00010 / 0110011 - r2 <= r1 | r0
 
 0000000 / 00001 / 00000 /  010  / 00010 / 0110011 - r2 <= r1 < r2
+
+#### Tipo I:
+As instruções do tipo I são aquelas que realizam operações com valores imediatos, ou seja, que não estejam em registradores. Nisso, estão incluídos: operações aritméticas com valores imediatos e operações de escrita (load). A configuração dos bits desse tipo de istrução segue o seguinte padrão:
+
+
 
 
 
