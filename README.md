@@ -15,7 +15,7 @@ As instruções do tipo R são aquelas que realizam operações aritméticas e l
 * funct7 (31-25) - funct7 é o código que diferencia as operações dentre as do tipo R.
 
 ##### Exemplos:
-funct7  /  rs1  /  rs2  /funct3 /   rd  /  opcode 
+funct7  /    rs1    /    rs2    /  funct3   /     rd    /    opcode 
 
 0000000 / 00001 / 00000 /  000  / 00010 / 0110011 - r2 <= r1 + r0
 
