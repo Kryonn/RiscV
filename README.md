@@ -17,13 +17,13 @@ As instruções do tipo R são aquelas que realizam operações aritméticas e l
 ##### Exemplos:
 funct7  /    rs1    /    rs2    /  funct3   /     rd    /    opcode 
 
-0000000 / 00001 / 00000 /  000  / 00010 / 0110011 - r2 <= r1 + r0
+0000000 / 00001 / 00000 /  000  / 00010 / 0110011 - r2 <= r1 + r0 - ADD
 
-0100000 / 00001 / 00000 /  000  / 00010 / 0110011 - r2 <= r1 + r0
+0100000 / 00001 / 00000 /  000  / 00010 / 0110011 - r2 <= r1 - r0 - SUB
 
-0000000 / 00001 / 00000 /  110  / 00010 / 0110011 - r2 <= r1 | r0
+0000000 / 00001 / 00000 /  110  / 00010 / 0110011 - r2 <= r1 | r0 - OR
 
-0000000 / 00001 / 00000 /  010  / 00010 / 0110011 - r2 <= r1 < r2
+0000000 / 00001 / 00000 /  010  / 00010 / 0110011 - r2 <= r1 < r2 - SLT
 
 #### Tipo I:
 As instruções do tipo I são aquelas que realizam operações com valores imediatos, ou seja, que não estejam em registradores. Nisso, estão incluídos: operações aritméticas com valores imediatos e operações de escrita (load). A configuração dos bits desse tipo de istrução segue o seguinte padrão:
@@ -39,6 +39,12 @@ As instruções do tipo I são aquelas que realizam operações com valores imed
 ##### Exemplos:
 
  imm[11:0]   /    rs2    /  funct3   /     rd    /    opcode
+
+ 000000000001 / 00001 / 000 / 00010 / 0010011 - r2 <= r1 + 1 - ADDI
+
+ 000000000001 / 00001 / 010 / 00010 / 0010011 - r2 <= r1 < 1 - SLTI
+
+ 
 
 
 
